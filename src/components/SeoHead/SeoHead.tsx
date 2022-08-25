@@ -28,10 +28,7 @@ export default function IngredientsTable(): JSX.Element {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="paleobuddy.vercel.app" />
-        <meta
-          property="twitter:url"
-          content="https://tools.lixiinvest.com/tools/calcolo-rendita-immobiliare/"
-        />
+        <meta property="twitter:url" content="https://paleobuddy.vercel.app/" />
         <meta name="twitter:title" content="Paleo Meal Buddy" />
         <meta
           name="twitter:description"
