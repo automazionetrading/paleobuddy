@@ -57,26 +57,31 @@ const Home: NextPage = () => {
   return (
     <>
       <div className="flex-col content-center align-center text-center ">
+        <div className="min-h-8 py-4 bg-base-300">
+          produly coded by D'ario Woollover
+        </div>
         <div className="my-4">
           <ThemeSwitcher />
         </div>
         <div className="header my-4 min-h-16">
-          <h1 className="my-8 text-7xl">PALEO MEAL BUDDY</h1>
+          <h1 className="my-8 text-7xl ">
+            <span className="block lg:inline">🍽️</span> PALEO MEAL BUDDY
+            <span className="hidden lg:inline">🍽️</span>
+          </h1>
         </div>
 
-        <button
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg my-8"
-          onClick={genera}
-        >
+        <button className="btn btn-lg my-8" onClick={genera}>
           Crea un piatto paleo
         </button>
-        <div className="border max-w-xl	 mx-auto my-8 rounded-xl bg-base-300 text-bold p-6 text-5xl">
-          {ricetta || 'RISULTATI'}
+        <div className="flex align-center min-w-full place-content-center">
+          <div className="border leading-relaxed max-w-xl text-secondary-focus my-8 rounded-xl m-2 bg-base-300 text-bold p-6 text-5xl">
+            {ricetta || 'Schiaccia il bottone per eliminare la 🍝'}
+          </div>
         </div>
-        <div className="prose mx-auto text-left">
+        <div className="prose mx-auto my-8 text-left ">
           <h1 className="text-center">Come cucinare la ricetta</h1>
           <ol>
-            <li>metti un po’ di olio in una padella</li>
+            <li>metti un po’ di olio (lardo) in una padella</li>
             <li>soffriggi la carne inquest’olio</li>
             <li>
               se usi spezie forti come lo zenzero, collocale prima della carne
@@ -90,7 +95,10 @@ const Home: NextPage = () => {
           </ol>
           <p>È in questo modo che cucino il 90% dei miei pasti</p>
         </div>
-        <IngredientsTable />
+        <div className="divider">INGREDIENTI</div>
+        <div className="flex place-content-center mt-4 ">
+          <IngredientsTable />
+        </div>
       </div>
     </>
   );

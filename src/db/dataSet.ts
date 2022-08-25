@@ -25,7 +25,7 @@ export const Ingredients: IIngredientCategory[] = [
       'Pancetta',
       'Arrosto di maiale',
       'Braciole di agnello',
-      'Filetto di cervoz'
+      'Filetto di cervo'
     ]
   },
   {

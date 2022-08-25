@@ -3,11 +3,11 @@ import { Ingredients, IIngredientCategory } from 'src/db/dataSet';
 export default function IngredientsTable(): JSX.Element {
   return (
     <>
-      <div className=" border border-emerald-600 content-center">
-        <div className="flex justify-items-center border border-blue-500 mx-auto">
+      <div className=" content-center">
+        <div className="flex flex-col md:flex-row md:px-6 justify-items-center mx-auto">
           {Ingredients.map((ingrGroup: IIngredientCategory, index: number) => {
             return (
-              <div key={ingrGroup.title}>
+              <div key={ingrGroup.title} className="flex-auto">
                 <IngredientColumn
                   title={ingrGroup.title}
                   name={ingrGroup.name}
@@ -28,7 +28,7 @@ function IngredientColumn({
   ingredients
 }: IIngredientCategory): JSX.Element {
   return (
-    <div className=" basis-1/4 m-2 rounded-xl">
+    <div className="  md:basis-1/4 m-2 rounded-xl">
       <div className="my- 2 p-4 uppercase text-3xl bg-base-300 rounded-md">
         <p>{title}</p>
       </div>
