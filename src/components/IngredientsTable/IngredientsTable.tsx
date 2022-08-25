@@ -35,7 +35,14 @@ function IngredientColumn({
       <div>
         <ul>
           {ingredients?.map((ing: string, k: number) => {
-            return <li className="rounded-md my-1 p-2 bg-base-200 ">{ing}</li>;
+            return (
+              <li
+                key={ing + String(k)}
+                className="rounded-md my-1 p-2 bg-base-200 "
+              >
+                {ing}
+              </li>
+            );
           })}
         </ul>
       </div>

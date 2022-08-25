@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     const fat: string = choice(fats);
     const spice: string = choice(spices);
 
-    let ricetta = `${protein} con ${vegetable.toLowerCase()}\nin ${fat.toLowerCase()} e ${spice.toLowerCase()}`;
+    const ricetta = `${protein} con ${vegetable.toLowerCase()}\nin ${fat.toLowerCase()} e ${spice.toLowerCase()}`;
 
     setRicetta(ricetta);
   };
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
     <>
       <div className="flex-col content-center align-center text-center ">
         <div className="min-h-8 py-4 bg-base-300">
-          produly coded by D'ario Woollover
+          produly coded by D&apos;ario Woollover
         </div>
         <div className="my-4">
           <ThemeSwitcher />
