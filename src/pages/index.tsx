@@ -1,6 +1,7 @@
 import IngredientsTable from '@/components/IngredientsTable';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { IIngredientCategory, Ingredients } from 'src/db/dataSet';
 
@@ -58,7 +59,10 @@ const Home: NextPage = () => {
     <>
       <div className="flex-col content-center align-center text-center ">
         <div className="min-h-8 py-4 bg-base-300">
-          produly coded by D&apos;ario Woollover
+          produly coded by{' '}
+          <Link href="https://www.facebook.com/dario.woollover/">
+            D&apos;ario Woollover
+          </Link>
         </div>
         <div className="my-4">
           <ThemeSwitcher />
