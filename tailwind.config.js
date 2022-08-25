@@ -11,7 +11,12 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
   daisyui: {
+    styled: true,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
     themes: true,
-    darkTheme: 'luxury'
+    darkTheme: 'dark'
   }
 };
