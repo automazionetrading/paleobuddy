@@ -1,8 +1,14 @@
-import '../styles/globals.css';
+import SeoHead from '@/components/SeoHead';
+import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <SeoHead />
+      <Component {...pageProps} />;
+    </>
+  );
 }
 
 export default MyApp;
