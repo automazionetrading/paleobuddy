@@ -25,8 +25,8 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     populateState(Ingredients);
-    console.log(fats);
-  }, [vegetables, proteins, fats, spices]);
+    // console.log(fats);
+  }, []);
 
   function populateState(Ingredients: IIngredientCategory[]) {
     Ingredients.map((ingrGroup: IIngredientCategory) => {
@@ -41,6 +41,7 @@ const Home: NextPage = () => {
           setProteins(ingrGroup.ingredients);
           break;
         case 'spices':
+          3;
           setSpices(ingrGroup.ingredients);
           break;
 
