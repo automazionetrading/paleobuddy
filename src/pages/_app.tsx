@@ -17,16 +17,16 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-9MVJ9G145W`}
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-9MVJ9G145W"
       />
-      <Script
-        strategy="lazyOnload"
-        src={`window.dataLayer = window.dataLayer || [];
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-9MVJ9G145W');`}
-      />
+          gtag('config', 'G-9MVJ9G145W');
+          `}
+      </Script>
       <SeoHead />
       <Component {...pageProps} />;
     </>
