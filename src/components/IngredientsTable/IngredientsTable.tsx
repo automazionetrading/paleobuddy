@@ -5,7 +5,7 @@ export default function IngredientsTable(): JSX.Element {
     <>
       <div className=" content-center">
         <div className="flex flex-col md:flex-row md:px-6 justify-items-center mx-auto">
-          {Ingredients.map((ingrGroup: IIngredientCategory, index: number) => {
+          {Ingredients.map((ingrGroup: IIngredientCategory) => {
             return (
               <div key={ingrGroup.title} className="flex-auto">
                 <IngredientColumn
@@ -24,7 +24,6 @@ export default function IngredientsTable(): JSX.Element {
 
 function IngredientColumn({
   title,
-  name,
   ingredients
 }: IIngredientCategory): JSX.Element {
   return (
@@ -38,8 +37,15 @@ function IngredientColumn({
             return (
               <li
                 key={ing + String(k)}
-                className="rounded-md my-1 p-2 bg-base-200 "
+                className="flex flex-row rounded-md my-1 p-2 bg-base-200 "
               >
+                <span>
+                  {' '}
+                  <input
+                    type="checkbox"
+                    className="checkbox checkbox-secondary mx-2"
+                  />
+                </span>
                 {ing}
               </li>
             );

@@ -30,7 +30,8 @@ const Home: NextPage = () => {
 
   function populateState(Ingredients: IIngredientCategory[]) {
     Ingredients.map((ingrGroup: IIngredientCategory) => {
-      switch (ingrGroup.name) {
+      const name: string = ingrGroup.name;
+      switch (name) {
         case 'vegetables':
           setVegetables(ingrGroup.ingredients);
           break;

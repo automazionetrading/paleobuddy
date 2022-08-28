@@ -44,7 +44,9 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'indent': [
       'warn',
-      2
+      2, {
+        'SwitchCase': 1
+      },
     ],
     'linebreak-style': [
       'warn',

@@ -25,7 +25,7 @@ export default function SeoHead(): JSX.Element {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Crea facilmente tantissime idee di ricette Paleo."
+          content="Crea con un click la tua prossima ricetta  paleo!"
         />
 
         <meta
@@ -37,7 +37,7 @@ export default function SeoHead(): JSX.Element {
         <meta property="og:title" content="Paleo Meal Buddy" />
         <meta
           property="og:description"
-          content="Crea facilmente tantissime idee di ricette Paleo."
+          content="Crea con un click la tua prossima ricetta  paleo!"
         />
         <meta
           property="og:image"
@@ -49,7 +49,7 @@ export default function SeoHead(): JSX.Element {
         <meta name="twitter:title" content="Paleo Meal Buddy" />
         <meta
           name="twitter:description"
-          content="Crea facilmente tantissime idee di ricette Paleo."
+          content="Crea con un click la tua prossima ricetta  paleo!"
         />
         <meta
           property="twitter:image"
