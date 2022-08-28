@@ -40,11 +40,10 @@ function IngredientColumn({
                 className="flex flex-row rounded-md my-1 p-2 bg-base-200 "
               >
                 <span>
-                  {' '}
-                  <input
+                  {/* <input
                     type="checkbox"
                     className="checkbox checkbox-secondary mx-2"
-                  />
+                  /> */}
                 </span>
                 {ing}
               </li>
